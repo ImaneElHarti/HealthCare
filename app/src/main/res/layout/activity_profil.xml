@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil">
+
+    <Button
+        android:id="@+id/dateMed"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/ic_date_range_black_24dp"
+        android:text="Appointement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/messagerie"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/mail"
+        android:text="Mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileMed" />
+
+    <Button
+        android:id="@+id/Medical_Folder"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/ic_create_new_folder_black_24dp"
+        android:text="Medical Folder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/ProfileMed"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/ic_person_outline_black_24dp"
+        android:text="PROFILE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Medical_Folder" />
+
+    <Button
+        android:id="@+id/searchMed"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/ic_search_black_24dp"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateMed" />
+
+    <Button
+        android:id="@+id/Lout"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/ic_exit_to_app_black_24dp"
+        android:onClick="logout"
+        android:text="Log Out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchMed" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="179dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="160dp"
+        android:text="Welcome User"
+        android:textColor="#33AEB6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="15dp"
+        android:text="You have some messages. check your mail box"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

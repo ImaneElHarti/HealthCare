@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DossierMedicalP">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+    <Button
+        android:id="@+id/Note"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="211dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/register"
+        android:text="Notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Medicament"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="211dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/drug"
+        android:text="Medicines"
+        app:layout_constraintStart_toEndOf="@+id/Note"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Visites"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/visite"
+        android:text="Visits"
+        app:layout_constraintStart_toEndOf="@+id/RetourDM"
+        app:layout_constraintTop_toBottomOf="@+id/Medicament" />
+
+    <Button
+        android:id="@+id/RetourDM"
+        android:layout_width="144dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/buttonf"
+        android:drawableTop="@drawable/ic_exit_to_app_black_24dp"
+        android:text="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Note" />
+</androidx.constraintlayout.widget.ConstraintLayout>

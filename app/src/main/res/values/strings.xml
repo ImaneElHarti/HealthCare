@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HealthCare</string>
+    <string-array name="specialite">
+        <item>speciality..</item>
+        <item>OrthoDentiste</item>
+        <item>Denstite</item>
+        <item>Pediatre</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.healthcare">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ProfilPatient"></activity>
+        <activity android:name=".medcinProfile" />
+        <activity android:name=".Messagerie" />
+        <activity android:name=".ModifierNote" />
+        <activity android:name=".ModifierMed" />
+        <activity android:name=".NoteDoc" />
+        <activity android:name=".MedicammentDoc" />
+        <activity android:name=".AppointementMed" />
+        <activity android:name=".DocVisites" />
+        <activity android:name=".PatientDm" />
+        <activity android:name=".SearchMed" />
+        <activity android:name=".choixMed" />
+        <activity android:name=".Medicament" />
+        <activity android:name=".Visites" />
+        <activity android:name=".NoteMed" />
+        <activity android:name=".DossierMedicalP" />
+        <activity android:name=".Appointement" />
+        <activity android:name=".ModifierProfil" />
+        <activity android:name=".ProfilClient" />
+        <activity android:name=".confirmation" />
+        <activity android:name=".Rendezvous" />
+        <activity android:name=".ProfilMed" />
+        <activity android:name=".Search" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Profil" />
+        <activity android:name=".Create_account" />
+        <activity android:name=".choosing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
